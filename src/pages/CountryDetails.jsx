@@ -18,10 +18,8 @@ const CountryDetails = ({darkMode}) => {
       setCountry(data[0]);
       setIsLoading(false);
     };
-
-    setTimeout(() => {
-      getData();
-    }, 3000);
+    
+    getData();
   }, []);
 
   return (

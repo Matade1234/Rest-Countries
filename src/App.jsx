@@ -22,10 +22,8 @@ function App() {
       setAllCountries(data);
       setIsLoading(false);
     };
-
-    setTimeout(() => {
-      getData();
-    }, 3000);
+    
+    getData();
   }, []);
 
   const filterByRegion = (region) => {
